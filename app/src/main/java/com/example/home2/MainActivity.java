@@ -31,41 +31,49 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnOne = findViewById(R.id.one);
-        btnOne.setOnClickListener(this);
-        btnTwo = findViewById(R.id.two);
-        btnTwo.setOnClickListener(this);
-        btnThree = findViewById(R.id.three);
-        btnThree.setOnClickListener(this);
-        btnFour = findViewById(R.id.four);
-        btnFour.setOnClickListener(this);
-        btnFive = findViewById(R.id.five);
-        btnFive.setOnClickListener(this);
-        btnSix = findViewById(R.id.six);
-        btnSix.setOnClickListener(this);
-        btnSeven = findViewById(R.id.seven);
-        btnSeven.setOnClickListener(this);
-        btnEight = findViewById(R.id.eight);
-        btnEight.setOnClickListener(this);
-        btnNine = findViewById(R.id.nine);
-        btnNine.setOnClickListener(this);
-        btnPlus = findViewById(R.id.plus);
-        btnPlus.setOnClickListener(this);
-        btnMultiply = findViewById(R.id.multiply);
-        btnMultiply.setOnClickListener(this);
-        btnDivision = findViewById(R.id.division);
-        btnDivision.setOnClickListener(this);
-        btnPoint = findViewById(R.id.point);
-        btnPoint.setOnClickListener(this);
-        btnNul = findViewById(R.id.nul);
-        btnNul.setOnClickListener(this);
-        btnMinus = findViewById(R.id.minus);
-        btnMinus.setOnClickListener(this);
-        btnEqually = findViewById(R.id.equally);
-        btnEqually.setOnClickListener(this);
-        et = findViewById(R.id.et);
-        et.setOnClickListener(this);
+        initView();
+        initOnclic();
 
+    }
+
+    private void initOnclic() {
+        btnOne.setOnClickListener(this);
+        btnTwo.setOnClickListener(this);
+        btnThree.setOnClickListener(this);
+        btnFour.setOnClickListener(this);
+        btnFive.setOnClickListener(this);
+        btnSix.setOnClickListener(this);
+        btnSeven.setOnClickListener(this);
+        btnEight.setOnClickListener(this);
+        btnNine.setOnClickListener(this);
+        btnPlus.setOnClickListener(this);
+        btnMultiply.setOnClickListener(this);
+        btnDivision.setOnClickListener(this);
+        btnPoint.setOnClickListener(this);
+        btnNul.setOnClickListener(this);
+        btnMinus.setOnClickListener(this);
+        btnEqually.setOnClickListener(this);
+        et.setOnClickListener(this);
+    }
+
+    private void initView() {
+        btnOne = findViewById(R.id.one);
+        btnTwo = findViewById(R.id.two);
+        btnThree = findViewById(R.id.three);
+        btnFour = findViewById(R.id.four);
+        btnFive = findViewById(R.id.five);
+        btnSix = findViewById(R.id.six);
+        btnSeven = findViewById(R.id.seven);
+        btnEight = findViewById(R.id.eight);
+        btnNine = findViewById(R.id.nine);
+        btnPlus = findViewById(R.id.plus);
+        btnMultiply = findViewById(R.id.multiply);
+        btnDivision = findViewById(R.id.division);
+        btnPoint = findViewById(R.id.point);
+        btnNul = findViewById(R.id.nul);
+        btnMinus = findViewById(R.id.minus);
+        btnEqually = findViewById(R.id.equally);
+        et = findViewById(R.id.et);
     }
 
     @Override
